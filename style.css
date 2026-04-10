@@ -7,21 +7,22 @@ scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#f5efe6,#e6d3c3,#fff);
+background:linear-gradient(135deg,#f5efe6,#e6d3c3,#ffffff);
 color:#5c4a3f;
 }
 
-/* REAL PENGUIN */
+/* 🐧 BIG VISIBLE PENGUIN */
 .penguin{
 position:fixed;
 top:20px;
 right:20px;
-width:60px;
-height:80px;
-animation:penguinMove 3s infinite ease-in-out;
+width:80px;
+height:100px;
+z-index:9999;
+animation:penguinBounce 2s infinite ease-in-out;
 }
 
-.body{
+.penguin-body{
 width:100%;
 height:100%;
 background:black;
@@ -29,43 +30,43 @@ border-radius:50%;
 position:absolute;
 }
 
-.body::after{
+.penguin-body::after{
 content:"";
-width:40px;
-height:60px;
+width:50px;
+height:70px;
 background:white;
 position:absolute;
-top:10px;
-left:10px;
+top:15px;
+left:15px;
 border-radius:50%;
 }
 
-.eye{
-width:8px;
-height:8px;
-background:white;
-border-radius:50%;
-position:absolute;
-top:20px;
-}
-
-.eye.left{ left:12px; }
-.eye.right{ right:12px; }
-
-.beak{
+.penguin-eye{
 width:10px;
 height:10px;
+background:white;
+border-radius:50%;
+position:absolute;
+top:25px;
+}
+
+.left{ left:15px; }
+.right{ right:15px; }
+
+.penguin-beak{
+width:12px;
+height:12px;
 background:orange;
 position:absolute;
-top:35px;
-left:25px;
+top:45px;
+left:34px;
 border-radius:50%;
 }
 
 /* Animation */
-@keyframes penguinMove{
+@keyframes penguinBounce{
 0%,100%{transform:translateY(0);}
-50%{transform:translateY(-10px) rotate(5deg);}
+50%{transform:translateY(-12px) rotate(5deg);}
 }
 
 /* Header */
@@ -73,7 +74,7 @@ header{
 display:flex;
 justify-content:space-between;
 padding:20px;
-background:rgba(255,255,255,0.4);
+background:rgba(255,255,255,0.6);
 backdrop-filter:blur(10px);
 position:sticky;
 top:0;
@@ -87,10 +88,10 @@ text-align:center;
 
 /* Hero */
 .hero{
-background:rgba(255,255,255,0.5);
+background:rgba(255,255,255,0.6);
 border-radius:20px;
 margin:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* Profile */
