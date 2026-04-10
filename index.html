@@ -6,83 +6,99 @@
 <title>Nuzzat Shaikh Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- Dark Mode -->
-<button class="toggle" onclick="toggleDark()">🌙</button>
-
-<!-- Penguin -->
+<!-- 🐧 Penguin -->
 <div class="penguin">🐧</div>
 
 <header>
-    <h2>Nuzzat Shaikh</h2>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#goals">Goals</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h2>Nuzzat Shaikh</h2>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certificates">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section id="home">
-    <img src="assets/profile.jpg" class="profile">
-    <h1>Nuzzat Shaikh</h1>
-    <p>B.Pharm Student | Future MBA Aspirant</p>
+<!-- HOME -->
+<section id="home" class="hero">
+<h1>Hello, I'm Nuzzat 👋</h1>
+<p>B.Pharm Student | Future Pharma + Business Leader</p>
+
+<img src="profile.jpg" class="profile-pic"
+onerror="this.src='https://via.placeholder.com/150'">
+
+<button onclick="welcomeMsg()">Say Hi 💫</button>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>I am a first-year B.Pharm student at MIT Vishwaprayag aiming to build strong academic knowledge and pursue MBA in future.</p>
-
-    <div class="skills">
-        <p>Communication</p>
-        <p>Teamwork</p>
-        <p>Basic Computer Skills</p>
-        <p>Problem Solving</p>
-    </div>
+<h2>About Me</h2>
+<p>
+As a first-year Bachelor of Pharmacy student, I am focused on building a strong academic foundation and achieving excellent grades. I aspire to pursue an MBA in Business to develop strategic, leadership, and management skills, aiming to integrate pharmaceutical knowledge with business expertise for a successful and impactful career.
+</p>
 </section>
 
-<section id="goals">
-    <h2>My Goal</h2>
-    <p>
-    As a first-year Bachelor of Pharmacy student, I am focused on building a strong academic foundation and achieving excellent grades. 
-    I aspire to pursue an MBA in Business to develop leadership and management skills.
-    </p>
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="card-container">
+<div class="card">Learning Pharmaceutical Basics</div>
+<div class="card">Problem Solving</div>
+</div>
 </section>
 
-<section id="achievements">
-    <h2>Achievements</h2>
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="card-container">
+<div class="card">Sustainable Design Thinking Project</div>
+</div>
+</section>
 
-    <div class="card">
-        <img src="assets/cert1.jpg">
-        <h3>Yuva AI for All</h3>
-    </div>
+<!-- CERTIFICATES -->
+<section id="certificates">
+<h2>Certificates</h2>
 
-    <div class="card">
-        <img src="assets/cert2.jpg">
-        <h3>Modern AI</h3>
-    </div>
+<div class="slider">
+
+<a href="cert1.jpg" target="_blank">
+<img src="cert1.jpg" class="slide active"
+onerror="this.src='https://via.placeholder.com/300'">
+</a>
+
+<a href="cert2.jpg" target="_blank">
+<img src="cert2.jpg" class="slide"
+onerror="this.src='https://via.placeholder.com/300'">
+</a>
+
+</div>
+
+<div class="slider-buttons">
+<button onclick="prevSlide()">⬅</button>
+<button onclick="nextSlide()">➡</button>
+</div>
 
 </section>
 
-<section id="gallery">
-    <h2>Gallery</h2>
-    <img src="assets/profile.jpg">
-    <img src="assets/cert1.jpg">
-    <img src="assets/cert2.jpg">
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: nuzzatshaikh169@gmail.com</p>
-    <p>GitHub: nuzzat2907.github.io</p>
+<h2>Contact</h2>
+<p>Email: nuzzatshaikh169@gmail.com</p>
+<p>GitHub: SCPU125018/github.io</p>
 </section>
+
+<footer>
+<p>© 2026 Nuzzat Shaikh</p>
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
