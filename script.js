@@ -19,5 +19,5 @@ showSlide(index);
 }
 
 function welcomeMsg(){
-alert("Welcome Nuzzat! ✨");
+alert("Welcome Nuzzat ✨🐧");
 }
