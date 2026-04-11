@@ -1,89 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- 3D Model Viewer -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>My Portfolio</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <h1>My Portfolio</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- HOME -->
 <section id="home">
-    <h2>Welcome</h2>
-    <img src="profile.jpg" alt="My Photo" class="profile">
-    <p>Hello! I am a BTech CSE student passionate about technology and development.</p>
+  <h2>Welcome</h2>
+  <img src="profile.jpg" alt="Profile" class="profile-img">
+  <p>Hello! I am a BTech CSE student.</p>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>I am a first-year engineering student learning programming, web development, and problem-solving.</p>
+  <h2>About Me</h2>
+  <p>
+    I am a first-year BTech Computer Science student passionate about coding,
+    web development, and learning new technologies.
+  </p>
 </section>
 
-<!-- ACHIEVEMENTS -->
 <section id="achievements">
-    <h2>Achievements</h2>
-
-    <div class="cert">
-        <img src="cert1.jpg" alt="Certificate 1">
-        <p>AI Course Certificate</p>
-    </div>
-
-    <div class="cert">
-        <img src="cert2.jpg" alt="Certificate 2">
-        <p>Programming Certificate</p>
-    </div>
-
+  <h2>Achievements</h2>
+  <div class="certificates">
+    <img src="cert1.jpg" alt="Certificate 1">
+    <img src="cert2.jpg" alt="Certificate 2">
+  </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>Developed using HTML, CSS, JavaScript.</p>
-    </div>
-
+  <h2>Projects</h2>
+  <ul>
+    <li>Student Portfolio Website</li>
+    <li>Basic C Programming Projects</li>
+  </ul>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>Phone: 1234567890</p>
-    <p>LinkedIn: your-link</p>
-    <p>GitHub: SPFU125018/github.io</p>
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>Phone: 1234567890</p>
+  <p>LinkedIn: your-linkedin-link</p>
+  <p>GitHub: SPFU125018/github.io</p>
 </section>
 
-<footer>
-    <p>© 2026 My Portfolio</p>
-</footer>
-
-<!-- 3D Penguin -->
-<model-viewer 
-    src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
-    auto-rotate 
-    camera-controls 
-    class="penguin">
-</model-viewer>
+<!-- Penguin -->
+<div class="penguin"></div>
 
 <script src="script.js"></script>
 
