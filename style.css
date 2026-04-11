@@ -1,10 +1,10 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5dc; /* beige */
-  color: #333;
+  background-color: #f5f5dc;
 }
 
+/* Header */
 header {
   background: white;
   padding: 15px;
@@ -29,22 +29,52 @@ section {
   padding: 40px;
 }
 
-/* Profile Image */
+/* Profile Image (SMALL CIRCLE) */
 .profile-img {
-  width: 140px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  display: block;
-  margin-top: 10px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
-/* Certificates */
-.certificates img {
-  width: 180px;
-  margin: 10px;
+/* Slider */
+.slider {
+  position: relative;
+  width: 220px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-/* Penguin Animation */
+/* Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+/* Penguin */
 .penguin {
   position: fixed;
   bottom: 10px;
