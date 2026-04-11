@@ -3,25 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nuzzat Shaikh</title>
+<title>Nuzzat Shaikh Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <!-- 🐧 Penguin -->
 <div class="penguin">
-  <div class="body"></div>
-  <div class="eye left"></div>
-  <div class="eye right"></div>
-  <div class="beak"></div>
+  <div class="penguin-body"></div>
+  <div class="penguin-eye left"></div>
+  <div class="penguin-eye right"></div>
+  <div class="penguin-beak"></div>
 </div>
 
 <header>
 <h2>Nuzzat Shaikh</h2>
 
-<nav>
+<nav class="navbar">
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
@@ -31,53 +32,74 @@
 </nav>
 </header>
 
-<section id="home">
-<h1>Hello, I'm Nuzzat</h1>
-<p>B.Pharm Student</p>
-<img src="profile.jpg" class="profile">
+<!-- HOME -->
+<section id="home" class="hero">
+<h1>Hello, I'm Nuzzat 👋</h1>
+<p>B.Pharm Student | Future Pharma + Business Leader</p>
+<img src="profile.jpg" class="profile-pic">
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-<h2>About</h2>
+<h2>About Me</h2>
 <p>
 I am a 1st year B.Pharm student at MIT Vishwaprayag University. 
 As a first-year Bachelor of Pharmacy student, I am focused on building a strong academic foundation and achieving excellent grades. I aspire to pursue an MBA in Business to develop strategic, leadership, and management skills, aiming to integrate pharmaceutical knowledge with business expertise for a successful and impactful career.
 </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
 <h2>Skills</h2>
-<div class="box">Communication</div>
-<div class="box">Teamwork</div>
-<div class="box">Basic Computer Skills</div>
-<div class="box">Problem Solving</div>
+<div class="card-container">
+<div class="card">Communication</div>
+<div class="card">Teamwork</div>
+<div class="card">Basic Computer Skills</div>
+<div class="card">Problem Solving</div>
+</div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
 
-<div class="box">
+<div class="card-container">
+<div class="card">
 <h3>AI Project</h3>
 <p>
 I am a first-year B.Pharm student developing an AI-based drug information chatbot. It provides details on medicines, dosage, and side effects, helping users access reliable information quickly while combining pharmaceutical knowledge with modern technology.
 </p>
 </div>
+</div>
 
 </section>
 
+<!-- CERTIFICATES -->
 <section id="certificates">
 <h2>Certificates</h2>
 
-<img src="cert1.jpg" class="cert">
-<img src="cert2.jpg" class="cert">
+<div class="slider">
+<img src="cert1.jpg" class="slide active">
+<img src="cert2.jpg" class="slide">
+</div>
+
+<div class="slider-buttons">
+<button onclick="prevSlide()">⬅</button>
+<button onclick="nextSlide()">➡</button>
+</div>
 
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <h2>Contact</h2>
 <p>Email: nuzzatshaikh169@gmail.com</p>
 <p>GitHub: SPFU125018</p>
 </section>
+
+<footer>
+<p>© 2026 Nuzzat Shaikh</p>
+</footer>
 
 <script src="script.js"></script>
 
