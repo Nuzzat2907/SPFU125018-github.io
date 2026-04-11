@@ -11,7 +11,7 @@ background:linear-gradient(135deg,#f5efe6,#e6d3c3,#ffffff);
 color:#5c4a3f;
 }
 
-/* 🐧 Penguin bottom-left */
+/* 🐧 Penguin (bottom-left) */
 .penguin{
 position:fixed;
 bottom:20px;
@@ -93,10 +93,12 @@ color:white;
 border-radius:8px;
 text-decoration:none;
 display:inline-block;
+transition:0.3s;
 }
 
 .navbar a:hover{
 background:#8b5e34;
+transform:scale(1.1);
 }
 
 /* Sections */
@@ -110,6 +112,7 @@ text-align:center;
 background:rgba(255,255,255,0.6);
 border-radius:20px;
 margin:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* Profile */
@@ -133,6 +136,12 @@ margin-top:20px;
 background:white;
 padding:20px;
 border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
 /* Slider */
