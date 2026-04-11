@@ -1,13 +1,1 @@
-let index = 0;
-
-function moveSlide(step) {
-  const slides = document.querySelector('.slides');
-  const total = document.querySelectorAll('.slides img').length;
-
-  index += step;
-
-  if (index < 0) index = total - 1;
-  if (index >= total) index = 0;
-
-  slides.style.transform = `translateX(-${index * 220}px)`;
-}
+console.log("Portfolio Loaded Successfully ✅");
