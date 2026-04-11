@@ -1,19 +1,4 @@
-let index = 0;
-let slides = document.getElementsByClassName("slide");
+// Simple animation log
+console.log("Portfolio Loaded Successfully 🚀");
 
-function showSlide(i){
-for(let s of slides){
-    s.classList.remove("active");
-}
-slides[i].classList.add("active");
-}
-
-function nextSlide(){
-index = (index + 1) % slides.length;
-showSlide(index);
-}
-
-function prevSlide(){
-index = (index - 1 + slides.length) % slides.length;
-showSlide(index);
-}
+// Optional: smooth scroll later if you add navbar
