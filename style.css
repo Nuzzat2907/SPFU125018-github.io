@@ -1,92 +1,51 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5dc;
+  font-family: Arial;
+  background: #f5f0e6;
+  color: #333;
 }
 
-/* Header */
-header {
-  background: white;
+/* NAV */
+nav {
+  background: #ffffff;
   padding: 15px;
-  position: sticky;
-  top: 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-section {
+/* HERO */
+.hero {
+  text-align: center;
   padding: 40px;
 }
 
-/* Profile Image */
-.profile-img {
-  width: 110px;
-  height: 110px;
+.profile {
+  width: 150px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
-/* Slider */
-.slider {
-  position: relative;
-  width: 220px;
-  overflow: hidden;
-  margin-top: 20px;
+/* CARD */
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slides img {
-  width: 220px;
-  height: 150px;
-  object-fit: cover;
+/* CERTIFICATES */
+.cert {
+  width: 200px;
+  margin: 10px;
   border-radius: 10px;
 }
 
-/* Buttons */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  cursor: pointer;
-}
-
-.prev { left: 0; }
-.next { right: 0; }
-
-/* Penguin */
+/* PENGUIN */
 .penguin {
   position: fixed;
   bottom: 10px;
-  left: 10px;
-  width: 60px;
-  height: 60px;
-  background: black;
-  border-radius: 50%;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  right: 10px;
+  width: 120px;
+  height: 120px;
 }
