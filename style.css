@@ -11,7 +11,7 @@ background:linear-gradient(135deg,#f5efe6,#e6d3c3,#ffffff);
 color:#5c4a3f;
 }
 
-/* 🐧 Penguin (BOTTOM LEFT FIXED) */
+/* 🐧 Penguin bottom-left */
 .penguin{
 position:fixed;
 bottom:20px;
@@ -68,7 +68,7 @@ border-radius:50%;
 50%{transform:translateY(-12px);}
 }
 
-/* HEADER */
+/* Header */
 header{
 display:flex;
 justify-content:space-between;
@@ -78,10 +78,9 @@ background:rgba(255,255,255,0.7);
 backdrop-filter:blur(10px);
 position:sticky;
 top:0;
-z-index:100;
 }
 
-/* 🔥 NAVBAR FIX (IMPORTANT) */
+/* Navbar buttons */
 .navbar{
 display:flex;
 gap:10px;
@@ -94,13 +93,10 @@ color:white;
 border-radius:8px;
 text-decoration:none;
 display:inline-block;
-font-weight:500;
-transition:0.3s;
 }
 
 .navbar a:hover{
 background:#8b5e34;
-transform:scale(1.1);
 }
 
 /* Sections */
@@ -114,7 +110,6 @@ text-align:center;
 background:rgba(255,255,255,0.6);
 border-radius:20px;
 margin:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* Profile */
@@ -138,12 +133,6 @@ margin-top:20px;
 background:white;
 padding:20px;
 border-radius:15px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.05);
-box-shadow:0 15px 30px rgba(0,0,0,0.2);
 }
 
 /* Slider */
@@ -165,14 +154,6 @@ display:block;
 /* Footer */
 footer{
 background:#e6d3c3;
-  /* Project Image */
-.project-img{
-width:100%;
-max-width:250px;
-margin-top:10px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
 padding:20px;
 margin-top:40px;
 }
