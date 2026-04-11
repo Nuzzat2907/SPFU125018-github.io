@@ -1,4 +1,9 @@
-// Simple animation log
-console.log("Portfolio Loaded Successfully 🚀");
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
 
-// Optional: smooth scroll later if you add navbar
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
