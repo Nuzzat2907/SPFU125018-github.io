@@ -17,7 +17,3 @@ function prevSlide(){
 index = (index - 1 + slides.length) % slides.length;
 showSlide(index);
 }
-
-function welcomeMsg(){
-alert("Welcome Nuzzat 🐧✨");
-}
