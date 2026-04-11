@@ -1,76 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Nuzzat Shaikh | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- 3D Penguin -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
 
-<header>
-  <h1>My Portfolio</h1>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<!-- NAVBAR -->
+<nav>
+  <h2>Nuzzat Shaikh</h2>
+</nav>
 
-<section id="home">
-  <h2>Welcome</h2>
-  <img src="profile.jpg" alt="Profile" class="profile-img">
+<!-- HERO -->
+<section class="hero">
+  <img src="assets/profile.jpg" class="profile">
+  <h1>Nuzzat Shaikh</h1>
+  <p>B.Pharma 1st Year - MIT Vishwaprayag</p>
 </section>
 
-<section id="about">
+<!-- ABOUT -->
+<section class="card">
   <h2>About Me</h2>
   <p>
-    I am a first-year B.Pharm student at MIT VPU, passionate about learning and building a strong academic foundation.
+    I am a first-year B.Pharm student passionate about learning and building a strong academic foundation.
   </p>
 </section>
 
-<section id="achievements">
-  <h2>Achievements</h2>
-
-  <div class="slider">
-    <div class="slides">
-      <img src="cert1.jpg" alt="Certificate 1">
-      <img src="cert2.jpg" alt="Certificate 2">
-    </div>
-
-    <button class="prev" onclick="moveSlide(-1)">❮</button>
-    <button class="next" onclick="moveSlide(1)">❯</button>
-  </div>
-
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
+<!-- SKILLS -->
+<section class="card">
+  <h2>Skills</h2>
   <ul>
-    <li>
-      <strong>AI Project</strong><br>
-      I am a first-year B.Pharm student developing an AI-based drug information chatbot. It provides details on medicines, dosage, and side effects, helping users access reliable information quickly while combining pharmaceutical knowledge with modern technology.
-    </li>
-
-    <li>
-      <strong>Sustainable Design Thinking</strong><br>
-      Worked on a project based on sustainable design thinking concepts.
-    </li>
+    <li>Communication</li>
+    <li>Teamwork</li>
+    <li>Problem Solving</li>
+    <li>Basic Computer Skills</li>
   </ul>
 </section>
 
-<section id="contact">
+<!-- PROJECTS -->
+<section class="card">
+  <h2>Projects</h2>
+
+  <p><b>AI Drug Information Chatbot</b></p>
+  <p>
+    Developed an AI-based chatbot that provides medicine details, dosage, and side effects.
+  </p>
+
+  <p><b>Sustainable Design Thinking</b></p>
+  <p>
+    Worked on a project based on sustainable design thinking concepts.
+  </p>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="card">
+  <h2>Certificates</h2>
+
+  <img src="assets/cert1.jpg" class="cert">
+  <img src="assets/cert2.jpg" class="cert">
+
+</section>
+
+<!-- GOAL -->
+<section class="card">
+  <h2>Career Goal</h2>
+  <p>
+    I aim to pursue an MBA in Business and integrate pharmaceutical knowledge with management skills to build a successful career.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="card">
   <h2>Contact</h2>
   <p>Email: nuzzatshaikh169@gmail.com</p>
   <p>GitHub: SPFU125018/github.io</p>
 </section>
 
-<div class="penguin"></div>
+<!-- PENGUIN -->
+<model-viewer 
+  src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+  auto-rotate 
+  camera-controls 
+  class="penguin">
+</model-viewer>
 
 <script src="script.js"></script>
 
