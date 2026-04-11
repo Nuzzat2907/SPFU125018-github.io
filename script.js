@@ -1,11 +1,13 @@
-console.log("Portfolio Loaded Successfully");
+let index = 0;
 
-// Simple smooth scroll (extra feature)
-document.querySelectorAll('a').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+function moveSlide(step) {
+  const slides = document.querySelector('.slides');
+  const total = document.querySelectorAll('.slides img').length;
+
+  index += step;
+
+  if (index < 0) index = total - 1;
+  if (index >= total) index = 0;
+
+  slides.style.transform = `translateX(-${index * 220}px)`;
+}
