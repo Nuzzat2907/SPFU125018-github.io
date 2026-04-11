@@ -165,6 +165,14 @@ display:block;
 /* Footer */
 footer{
 background:#e6d3c3;
+  /* Project Image */
+.project-img{
+width:100%;
+max-width:250px;
+margin-top:10px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
 padding:20px;
 margin-top:40px;
 }
